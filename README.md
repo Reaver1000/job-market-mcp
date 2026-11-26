@@ -1,5 +1,7 @@
 # Job Market MCP
 
+![tests](https://github.com/Reaver1000/job-market-mcp/actions/workflows/ci.yml/badge.svg)
+
 A Claude skill and MCP server over my daily snapshot of public job postings.
 On 26 November 2026 the snapshot held **20,744 live postings from 82 sources**.
 The same data powers my [dashboard](https://reaver1000-job-market-dashboard.static.hf.space),
@@ -132,10 +134,13 @@ for an hour. `JOB_MARKET_CACHE_DIR` changes the cache location and
 
 ```bash
 pytest
+python scripts/smoke_mcp.py
 ```
 
-The tests cover the analytics functions and the local data loader. They do not
-need a network connection.
+The pytest suite covers the analytics functions and the local data loader. It
+does not need a network connection. The smoke script spawns the server over
+stdio and calls two tools through the real MCP protocol, which does download
+the current snapshot unless `JOB_MARKET_DATA_DIR` is set.
 
 ## License
 
