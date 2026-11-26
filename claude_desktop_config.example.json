@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "job-market": {
+      "command": "job-market-mcp",
+      "env": {
+        "JOB_MARKET_DATA_DIR": "C:/Users/you/source/repos/job-market-dashboard/data"
+      }
+    }
+  }
+}

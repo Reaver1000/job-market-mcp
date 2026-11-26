@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "job-market": {
+      "command": "job-market-mcp"
+    }
+  }
+}
