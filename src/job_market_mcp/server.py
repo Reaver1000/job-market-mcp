@@ -45,6 +45,7 @@ def dataset_info() -> dict:
         },
         "caveats": [
             "Not a representative sample of the whole labour market. It is the view of one pipeline over public boards.",
+            "The sweep query pack changed on 27 November 2026 to focus on mid-level and junior operations, implementation, solutions, support and data roles. Counts before and after that date are not directly comparable.",
             "The remote flag is text-based. LinkedIn's guest API ignores its remote filter, so LinkedIn lanes undercount remote roles.",
             "Some postings have no posted date. Where a date is missing the row stays blank rather than being filled.",
             "Greenhouse reports updated_at rather than first-published date, so a few dormant postings carry old dates.",

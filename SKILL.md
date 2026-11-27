@@ -25,8 +25,9 @@ dataset. The data is published daily from my own job-discovery pipeline.
 2. The `remote` flag is text-based. LinkedIn's guest API ignores its remote filter, so LinkedIn lanes undercount remote roles. Say so when the answer depends on remote share.
 3. Some postings have no posted date. Percentages of dated postings are not percentages of all rows.
 4. This is not a representative sample of the whole labour market. It is one pipeline's view of public boards.
-5. Quote the original posting URL when naming a specific role.
-6. Prefer `search_jobs` over guessing. If a query returns nothing, say so and suggest a broader keyword.
+5. The query pack changed on 27 November 2026 to focus on mid-level and junior operations, implementation, solutions, support and data roles. Counts before and after that date are not directly comparable.
+6. Quote the original posting URL when naming a specific role.
+7. Prefer `search_jobs` over guessing. If a query returns nothing, say so and suggest a broader keyword.
 
 ## Good questions
 
