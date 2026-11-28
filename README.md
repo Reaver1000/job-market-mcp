@@ -3,7 +3,7 @@
 ![tests](https://github.com/Reaver1000/job-market-mcp/actions/workflows/ci.yml/badge.svg)
 
 A Claude skill and MCP server over my daily snapshot of public job postings.
-On 27 November 2026 the snapshot held **20,067 live postings from 69 sources**.
+On 28 November 2026 the snapshot held **20,092 live postings from 64 sources**.
 The same data powers my [dashboard](https://reaver1000-job-market-dashboard.static.hf.space),
 the [Hugging Face dataset](https://huggingface.co/datasets/Reaver1000/job-market-daily)
 and the [Remote, Not America](https://remotenotamerica.substack.com) newsletter.
@@ -86,18 +86,18 @@ Prompt:
 
 > How many live postings are there, and how many are older than 60 days?
 
-`market_summary` at the 27 November 2026 snapshot returned:
+`market_summary` at the 28 November 2026 snapshot returned:
 
 ```json
 {
-  "as_of": "2026-11-27",
-  "total_postings": 20067,
-  "remote_postings": 3272,
-  "remote_share_pct": 16.3,
-  "sources": 69,
+  "as_of": "2026-11-28",
+  "total_postings": 20092,
+  "remote_postings": 3166,
+  "remote_share_pct": 15.8,
+  "sources": 64,
   "dated_coverage_pct": 100.0,
-  "stale_60_plus": 4457,
-  "stale_60_plus_share_pct": 22.2
+  "stale_60_plus": 4523,
+  "stale_60_plus_share_pct": 22.5
 }
 ```
 
@@ -105,8 +105,8 @@ Prompt:
 
 > Which skills show up most often in junior-titled ads?
 
-`junior_market` returned Python in 28 of 124 ads, Excel in 27, Linux in 23, and
-106 of the 124 ads stated no experience bar at all.
+`junior_market` returned Python in 28 of 133 ads, Excel in 27, Linux in 23, and
+115 of the 133 ads stated no experience bar at all.
 
 ## Data
 
